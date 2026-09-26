@@ -32,9 +32,20 @@ only then: live / shadow consideration
 
 If an implementation cannot pass those gates, the correct outcome is to document the failure or blocker rather than present it as a functioning scanner.
 
+## Archived version history
+
+The known scanner lineage is now organized under [`archive/`](archive/README.md):
+
+- **V1** — early BTC multi-timeframe dashboard; discontinued.
+- **V2** — multi-coin structure/FVG/sweep scanner; scoring was not empirically derived.
+- **V3** — harder regime/volume/candle/R:R gates; superseded.
+- **V4 / V4.1** — stricter closed-candle and paper-validation path; **V4.1 failed real-money eligibility** in its six-month / 18-symbol backtest.
+
+The exact source packages were not recoverable from the currently accessible saved artifacts, so these are intentionally **history-only records**. No missing code has been recreated from memory.
+
 ## Current repository contents
 
-There is currently **no validated scanner code published here**.
+There is currently **no validated scanner code published here**. The repository does contain the documented historical lineage under [`archive/`](archive/README.md), including the negative V4.1 validation result.
 
 Any future revival should start from a documented data contract and validation protocol rather than from an unverified signal script.
 
